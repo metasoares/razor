@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css" />
+    <!-- Home CSS -->
+    <link rel="stylesheet" href="/home.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>App</title>
+    <script
+      src="https://kit.fontawesome.com/0ffb388943.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./home.js" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.4.1/axios.min.js" integrity="sha512-Fh/JL4KFgbH0OFN4EMEOvk90MTCjVuTVGFRDc+Kh5PyUFOzSzn/KA6PTOSNywfm5Ruppr40Uj09oGuj5tn6jiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <header class="header">
+        <nav>
+          <ul class="nav-links nav-lists">
+            <li class="logo">Razor</li>
+            <li class="header-right">
+              <i class="fa-solid fa-globe gimage globeImage"></i>
+              <a href="/login.html" class="anchor-signin" id="anchor-signin">
+                <span class="signup signIn">Sign In</span>
+              </a>
+              <div class="user-image-container new-user-image-container'">
+                <span class="user-name">User</span>
+                <span class="user-image-mini-container">
+                  <p class="user-image"></p>
+                </span>
+                <ul class="navbar-lists navbar-links">
+                   <li class="navbar-list navbar-links user-name-list"><a class="user-anchor-list" href="/home.html">User</a></li>
+                   <li class="navbar-list navbar-links user-profile-list"><a class="user-anchor-profile" href="/setting/profile.html" onClick="fetchProfile()" >Your Profile</a></li>
+                   <li class="navbar-list navbar-links user-signOut-list"><a class="user-anchor-signOut" href="/login.html" onClick="signOut()">Sign Out</a></li>
+                </ul>
+                <i class="fa-solid fa-caret-down  triangle-down"  onClick="showList()"></i>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Main -->
+      <main class="main-container gallery-main-container">
+         <h2 class="gallery-title">My Gallery</h2>
+         <div class="gallery-section">
+          <img class="'image one"  src="https://images.unsplash.com/photo-1664525288580-4d26268ef376?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEzOHx4SHhZVE1ITGdPY3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"  alt="A fashionable girl called Emma in Paris" />
+          <img class="'image two" src="https://images.unsplash.com/photo-1666565036293-58bbe8fb1f13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDM2fHhIeFlUTUhMZ09jfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"  alt="An old brand car in Milan drived by Peter" />
+          <img class="'image three"  src="https://images.unsplash.com/photo-1664624568346-e82ee9315924?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEzN3x4SHhZVE1ITGdPY3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"  alt="Kay visting Dubai about two month ago" />
+          <img class="'image four" src="https://images.unsplash.com/photo-1665328315672-963fc08128d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDExN3x4SHhZVE1ITGdPY3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="What a nice bike!" />
+          <img class="'image five" src="https://images.unsplash.com/photo-1664910068340-c76f9e12e461?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEyMnx4SHhZVE1ITGdPY3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="A gucci store in Shanghai" />
+          <img class="'image six" src="https://images.unsplash.com/photo-1641974747505-b8e77b521aa9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0Nnx4SHhZVE1ITGdPY3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="Taking a train in winter looks awesome" />
+
+
+          <!-- 
+            <div class="gallery-image-container gallery-image-container-one"><img class="gallery-image one" src="https://images.unsplash.com/photo-1664525288580-4d26268ef376?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEzOHx4SHhZVE1ITGdPY3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="A fashionable girl called Emma in Paris" /></div>
+          <div class="gallery-image-container gallery-image-container-two"><img class="gallery-image two" src="https://images.unsplash.com/photo-1666565036293-58bbe8fb1f13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDM2fHhIeFlUTUhMZ09jfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="An old brand car in Milan drived by Peter" /></div>
+          <div class="gallery-image-container gallery-image-container-three"><img class="gallery-image three" src="https://images.unsplash.com/photo-1664624568346-e82ee9315924?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEzN3x4SHhZVE1ITGdPY3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="Kay visting Dubai about two month ago" /></div>
+          <div class="gallery-image-container gallery-image-container-four"><img class="gallery-image four" src="https://images.unsplash.com/photo-1665328315672-963fc08128d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDExN3x4SHhZVE1ITGdPY3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="What a nice bike!" /></div>
+          <div class="gallery-image-container gallery-image-container-five"><img class="gallery-image five" src="https://images.unsplash.com/photo-1664910068340-c76f9e12e461?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEyMnx4SHhZVE1ITGdPY3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="A gucci store in Shanghai" /></div>
+          <div class="gallery-image-container gallery-image-container-six"><img class="gallery-image six" src="https://images.unsplash.com/photo-1641974747505-b8e77b521aa9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0Nnx4SHhZVE1ITGdPY3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="Taking a train in winter looks awesome" /></div>
+           -->
+         </div>
+      </main> 
+      </div>
+</body>
+</html>

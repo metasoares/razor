@@ -1,0 +1,209 @@
+
+  .header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .anchor-title, .backHome-result{
+    color: #000000;
+    text-decoration: none;
+}
+
+  .logo {
+    font-size: xx-large;
+    font-weight: 800;
+    cursor: pointer;
+  }
+  
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  
+  .form-container {
+    background-color: white;
+    width: 400px;
+    height: 600px;
+    border: 20px white solid;
+    border-radius: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-title-section {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .form-title-section:hover {
+    cursor: default;
+  }
+  
+  .form-title-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-title {
+    font-size: x-large;
+    font-weight: 600;
+  }
+  
+  .dtextl1 {
+    font-size: small;
+  }
+  
+  .dtextl2 {
+    font-size: small;
+  }
+  
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .inputui {
+    width: 360px;
+    height: 40px;
+    box-shadow: none;
+    border: 10px solid rgb(199, 199, 199);
+    border-width: 1px;
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+  
+  .inputui:focus {
+    outline: none;
+  }
+  
+  .help {
+    font-size: smaller;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .help:hover {
+    cursor: pointer;
+  }
+
+  .backHome-result {
+    width: 100%;
+    height: auto;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+  }
+  
+  .signinb {
+    width: 100%;
+    height: 50px;
+    box-shadow: none;
+    border-color: transparent;
+    border-radius: 10px;
+    background-color: rgb(255, 202, 102);
+    font-weight: 600;
+  }
+  
+  .signinb:hover {
+    background-color: rgb(214, 145, 16);
+    cursor: pointer;
+  }
+  
+  .signinb:focus {
+    outline: none;
+  }
+  
+  .others {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .otheroptions {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .otherbuttons {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(199, 199, 199);
+    padding: 9px;
+    height: 20px;
+    width: 100px;
+    border-radius: 5px;
+  }
+  
+  .otherbuttons:hover {
+    cursor: pointer;
+  }
+  
+  .reqaccount {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-self: center;
+    margin-top: 30px;
+    gap: 3px;
+    font-size: smaller;
+  }
+  
+  .reqa1 {
+    font-weight: lighter;
+  }
+  
+  .reqa2 {
+    font-weight: bolder;
+  }
+  
+  .reqa2:hover {
+    cursor: pointer;
+  }
+
+  .alert-email, .alert-passcode, .form-alert {
+    color: brown;
+  }
+
+  .result {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+  }
+
+  .name-result, .image-result {
+    color: aqua;
+  }
+
+  .name-result, .image-result {
+    display: flex;
+    
+  }
+
+
+  .image-result {
+    color: rgb(212, 255, 0);
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+    object-fit: fill;
+  }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./profile.css" />
+    <script type="text/javascript" src="./index.js" defer></script> 
+    <title>Razor</title>
+</head>
+<body>
+  <main class="main-profile">
+     <h1><a class="profile-anchor-label" href="/home.html">Profile</a></h1>
+     <div class="profile-container">
+       
+        <div class="profile-info">
+            <strong class="profile-description">
+                <p>Description</p>
+            </strong>
+            <span class="id-block">
+                <p class="id-label">ID:</p>
+                <p class="id-view">134r56e34t</p>
+            </span>
+            <span class="name-block">
+                <p class="name-label">Name:</p>
+                <p class="name-view">Bruni</p>
+            </span>
+            <span class="email-block">
+                <p class="email-label">Email:</p>
+                <p class="email-view">bruni@gmail.com</p>
+            </span>
+            <span class="date-block">
+                <p class="date-label">Date:</p>
+                <p class="date-view">2022-12-09</p>
+            </span>
+        </div>
+        <div class="profile-image-container">
+            <div class="image-block">
+                <p class="profile-image new-profile-image">
+                    <!-- <i></i> -->
+                </p>
+                <span class="profile-name-block">
+                    <b class="profile-name-view">Bruni</b>
+                </span>
+            </div>
+        </div>
+     </div>
+  </main>
+
+   <!-- If there is no data -->
+   <div class="error-container">
+    <div class="error-center">
+      <img src="https://cdn-icons-png.flaticon.com/512/2798/2798069.png" alt="" class="error-image">
+        <p class="error-msg">Ooops, something went wrong!</p>
+      </img>
+    </div>
+
+   <!-- Axios -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.4.1/axios.min.js" integrity="sha512-Fh/JL4KFgbH0OFN4EMEOvk90MTCjVuTVGFRDc+Kh5PyUFOzSzn/KA6PTOSNywfm5Ruppr40Uj09oGuj5tn6jiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

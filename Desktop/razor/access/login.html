@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="/styles.css" />
+    <!-- Login Style -->
+    <link rel="stylesheet" href="/login.css" />
+    <!-- Js Axios -->
+   
+        <script type="text/javascript" src="/main.js" defer></script>
+        <!-- AXios -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>App</title>
+    <script
+      src="https://kit.fontawesome.com/0ffb388943.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header new-header">
+    
+          <a href="/home.html" class="anchor-title">
+          <h1 class="logo">Razor</h1>
+          </a>
+      
+    </header>
+    <main class="main">
+       <!-- <a class="backHome-result"> -->
+      <form class="form-container" action="/home.html" >
+        <div class="form-title-section">
+          <span class="form-title">Agent Login</span>
+          <div class="form-title-details">
+            <span class="dtextl1"
+              >Hey, enter your details to get signed in</span
+            >
+            <span class="dtextl2">to your account</span>
+          </div>
+        </div>
+        <div class="inputs">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            value=""
+            class="inputui email"
+            placeholder="Enter Email"
+            autocomplete="false"
+          />
+          <small class="alert-email"></small>
+          <input
+            type="password"
+            name="passcode"
+            id="passcode"
+            value=""
+            class="inputui passcode"
+            placeholder="Passcode"
+            autocomplete="false"
+          />
+          <small class="alert-passcode"></small>
+
+        </div>
+        <span class="help">Having trouble in signing in?</span>
+        <!-- <a class="backHome-result" href="./home.html"> -->
+        <!-- <button class="signinb submit" >Sign In</button> -->
+      <!-- </a> -->
+      <button  class="signinb submit sign-btn" >Sign In</button>
+        <!-- <small class="result"></small> -->
+        <!-- <small class="result-alert"></small> -->
+        <!-- <small class="name-result"></small>
+        <small class="image-result"></small> -->
+        <small class="form-alert"></small>
+
+        <div class="others">
+          <span class="otherspan">-- Or Sign In With --</span>
+          <div class="otheroptions">
+            <div class="otherbuttons">
+              <i class="fa-brands fa-google othericons"></i>
+              <span class="othertext">Google</span>
+            </div>
+            <div class="otherbuttons">
+              <i class="fa-brands fa-apple othericons"></i>
+              <span class="othertext">Apple ID</span>
+            </div>
+            <div class="otherbuttons">
+              <i class="fa-brands fa-facebook othericons"></i>
+              <span class="othertext">Facebook</span>
+            </div>
+          </div>
+        </div>
+        <div class="reqaccount">
+          <span class="reqa1">Don't have an account? </span>
+          <span class="reqa2">Request Now</span>
+        </div>
+      </form>
+    <!-- </a> -->
+    </main>
+    <!-- Axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.4.1/axios.min.js" integrity="sha512-Fh/JL4KFgbH0OFN4EMEOvk90MTCjVuTVGFRDc+Kh5PyUFOzSzn/KA6PTOSNywfm5Ruppr40Uj09oGuj5tn6jiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+  
+  </body>
+</html>

@@ -37,13 +37,7 @@ if (sessionStorage.getItem('name') && sessionStorage.getItem('image') && session
     //TRiangle Icon
     triangleIcon.style.display = 'block'
 
-    //Gallery
-    one.setAttribute('src',`${sessionStorage.getItem('gallery-first')}`)
-    two.setAttribute('src',`${sessionStorage.getItem('gallery-second')}`)
-    three.setAttribute('src',`${sessionStorage.getItem('gallery-third')}`)
-    four.setAttribute('src',`${sessionStorage.getItem('gallery-fourth')}`)
-    five.setAttribute('src',`${sessionStorage.getItem('gallery-fifth')}`)
-    six.setAttribute('src',`${sessionStorage.getItem('gallery-sixth')}`)
+   
 
     // galleryDiv.appendChild()
 
@@ -54,9 +48,9 @@ if (sessionStorage.getItem('name') && sessionStorage.getItem('image') && session
     //Create image tag
     const img = document.createElement('img')
     //Add image to container
-    const image = sessionStorage.getItem('image')
+    // const image = sessionStorage.getItem('image')
     img.setAttribute('class', 'new-user-image')
-    img.setAttribute('src', image)
+    img.setAttribute('src', `${sessionStorage.getItem('image')}`)
 
     
     //Remove sign in label
@@ -66,19 +60,18 @@ if (sessionStorage.getItem('name') && sessionStorage.getItem('image') && session
      //Add image to mini-container
     miniContainer.appendChild(img)
     mainContainer.appendChild(triangleIcon)
+
+     //Gallery
+     one.setAttribute('src',`${sessionStorage.getItem('gallery-first')}`)
+     two.setAttribute('src',`${sessionStorage.getItem('gallery-second')}`)
+     three.setAttribute('src',`${sessionStorage.getItem('gallery-third')}`)
+     four.setAttribute('src',`${sessionStorage.getItem('gallery-fourth')}`)
+     five.setAttribute('src',`${sessionStorage.getItem('gallery-fifth')}`)
+     six.setAttribute('src',`${sessionStorage.getItem('gallery-sixth')}`)
 }
  
 function showList () {
-    // if (listStatus === 0) {
         navbarLists.style.display = 'block'
-
-    //     listStatus = 1
-    // }
-    //  else if (listStatus === 1) {
-    //     mainContainer.removeChild(navbarLists)
-    //     listStatus = 0
-    // }
-    // console.log(listStatus)
 }
  
 async function fetchProfile () {
